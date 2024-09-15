@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-event</title>
+    <style>
+        .heading{
+            text-align: center;
+        }
+        .button{
+            padding-top: 10px; 
+            padding-bottom: 10px; 
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 12px;
+            background: #c3c1c1;
+            border: none;
+            cursor: pointer;
+        }
+        .button.button:hover{
+            background: #c8c7c7;
+        }
+        .btn-container{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="heading">Button ke click korle jadu hobe</h1>
+<div class="btn-container">
+<button class="button" onclick="document.body.style.backgroundColor = 'red'">Click me</button>
+<button class="button" onclick="document.body.style.backgroundColor = 'blue'">Click me</button>
+<button class="button" onclick="document.body.style.backgroundColor = 'green'">Click me</button>
+<button class="button" onclick="document.body.style.backgroundColor = 'aqua'">Click me</button>
+<button class="button" onclick="document.body.style.backgroundColor = 'purple'">Click me</button>
+<button class="button" onclick="document.body.style.backgroundColor = 'orange'">Click me</button>
+
+<button onclick="sub()" class="button">Subscribe</button>
+</div>
+    <script src="js/node.js"></script>
+    <script>
+        alert("tumi ki jadu dekte chaw?")
+    </script>
+    <script>
+        function sub(){
+            alert("Thanks for subscribe")
+        }
+    </script>
+</body>
+</html>
